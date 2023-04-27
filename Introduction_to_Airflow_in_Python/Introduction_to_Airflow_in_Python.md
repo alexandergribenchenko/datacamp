@@ -2,4 +2,15 @@
 
 # Chapter 01. Intro to Airflow.
 
+Contenido ejemplo d eun archivo `ejemplo.sh`:
+```bash
+#!/bin/bash
+# Crear la carpeta en la misma ubicación donde se ejecuta el script
+mkdir "./carpeta_nueva"
+```
+
+
+
+Para ejecutar un archivo `.sh` debemos ejeecutar
+
 # Chapter 02. Implementing Airflow DAGs.
