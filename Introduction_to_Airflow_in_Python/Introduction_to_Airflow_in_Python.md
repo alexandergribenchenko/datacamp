@@ -47,6 +47,24 @@ bash_command='runcleanup.sh',
 dag=ml_dag)
 ```
 
+## 03. Airflow: PythonOperator examples
+```python
+from airflow.operators.python_operator import PythonOperator
+
+def printme():
+print("This goes in the logs!")
+
+python_task = PythonOperator(
+task_id='simple_print',
+python_callable=printme,
+dag=example_dag
+)
+```
+
+
+
+
+
 ## 04. Airflow: Orden tareas
 
 ### 04.01. Ejemplo 01.
