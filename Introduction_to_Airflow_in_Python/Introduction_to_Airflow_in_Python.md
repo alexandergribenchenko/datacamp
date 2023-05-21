@@ -28,7 +28,7 @@ etl_dag = DAG('example_etl', default_args=default_args)
 
 
 
-## 02. Airflow: archivos `.sh`
+## 03. Airflow: archivos `.sh`
 Contenido ejemplo de un archivo `ejemplo.sh`:
 ```bash
 #!/bin/bash
