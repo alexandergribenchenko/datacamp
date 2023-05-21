@@ -2,6 +2,12 @@
 
 # Chapter 01. Intro to Airflow.
 
+## 01. Airflow: comandos básicos
+-  `airflow` : Me muestra todos los posibles subcomandos:  ´backfill,list_dag_runs,list_tasks,clear,pause,unpause,trigger_dag,delete_dag,pool,variables,kerberos,render,run,initdb,list_dags,dag_state,task_failed_deps,task_state,serve_logs,test,webserver,resetdb,upgradedb,scheduler,worker,flower,version,connections,create_user,delete_user,list_users,sync_perm,next_execution,rotate_fernet_key´
+-  `airflow version`: me permite saber la version de Airflow instalada.
+
+
+
 Contenido ejemplo de un archivo `ejemplo.sh`:
 ```bash
 #!/bin/bash
