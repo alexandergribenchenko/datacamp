@@ -36,6 +36,11 @@ dag=dag_al_que_quiero_asignar)
 bash_task = BashOperator(task_id='clean_addresses',
 bash_command='cat addresses.txt | awk "NF==10" > cleaned.txt',
 dag=dag_al_que_quiero_asignar)
+
+bash_task_sh = BashOperator(
+task_id='bash_script_example',
+bash_command='runcleanup.sh',
+dag=ml_dag)
 ```
 
 
