@@ -25,6 +25,19 @@ default_args = {
 etl_dag = DAG(dag_id='example_etl', default_args=default_args)
 ```
 
+## 02. Airflow: instanciar un DAG básico
+```python
+from airflow.operators.bash_operator import BashOperator
+
+example_task = BashOperator(task_id='bash_ex',
+bash_command='echo 1',
+dag=dag)
+
+bash_task = BashOperator(task_id='clean_addresses',
+bash_command='cat addresses.txt | awk "NF==10" > cleaned.txt',
+dag=dag)
+```
+
 
 
 
