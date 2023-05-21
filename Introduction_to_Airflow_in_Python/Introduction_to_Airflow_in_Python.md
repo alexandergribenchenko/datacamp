@@ -9,7 +9,7 @@ Contenido ejemplo de un archivo `ejemplo.sh`:
 mkdir "./carpeta_nueva"
 ```
 
-Para ejecutar un archivo `.sh` debemos ejecutar:
+Para ejecutar un archivo `.sh` debemos ejecutar en un terminal de linux (por ejemplo, git bash si estamos en Windows) :
 ```bash
 bash ejemplo.sh
 ```
