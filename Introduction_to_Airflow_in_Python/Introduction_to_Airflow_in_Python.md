@@ -29,6 +29,27 @@ default_args = {
 etl_dag = DAG(dag_id='example_etl', default_args=default_args)
 ```
 
+## 02. Airflow: instanciar un DAG con squedule
+
+cron syntax to configure a schedule of every Wednesday at 12:30pm
+```python
+# Update the scheduling arguments as defined
+default_args = {
+  'owner': 'Engineering',
+  'start_date': datetime(2019, 11, 1),
+  'email': ['airflowresults@datacamp.com'],
+  'email_on_failure': False,
+  'email_on_retry': False,
+  'retries': 3,
+  'retry_delay': timedelta(minutes=20)
+}
+
+dag = DAG('update_dataflows', default_args=default_args, schedule_interval='30 12 * * 3')
+```
+
+
+
+
 ## 03. Airflow: BashOperator examples
 ```python
 from airflow.operators.bash_operator import BashOperator
