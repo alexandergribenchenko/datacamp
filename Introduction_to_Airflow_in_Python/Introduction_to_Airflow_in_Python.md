@@ -9,7 +9,7 @@
 -  `airflow list_dags`: me entrega una lista de todos los dags dentro de airflow.
 
 
-
+## 02. Airflow: archivos `.sh`
 Contenido ejemplo de un archivo `ejemplo.sh`:
 ```bash
 #!/bin/bash
