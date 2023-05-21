@@ -83,7 +83,7 @@ pull_file_task = PythonOperator(
 
 
 def printme():
-print("This goes in the logs!")
+  print("This goes in the logs!")
 
 python_task = PythonOperator(
 task_id='simple_print',
