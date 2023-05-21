@@ -44,6 +44,39 @@ dag=ml_dag)
 ```
 
 ## 04. Airflow: Orden tareas
+
+### 04.01. Ejemplo 01.
+```python
+from airflow.models import DAG
+from airflow.operators.bash_operator import BashOperator
+from datetime import datetime
+
+default_args = {
+  'owner': 'dsmith',
+  'start_date': datetime(2020, 2, 12),
+  'retries': 1
+}
+
+codependency_dag = DAG('codependency', default_args=default_args)
+
+task1 = BashOperator(task_id='first_task',
+                     bash_command='echo 1',
+                     dag=codependency_dag)
+
+task2 = BashOperator(task_id='second_task',
+                     bash_command='echo 2',
+                     dag=codependency_dag)
+
+task3 = BashOperator(task_id='third_task',
+                     bash_command='echo 3',
+                     dag=codependency_dag)
+
+# task1 must run before task2 which must run before task3
+task1 >> task2
+task2 >> task3
+```
+
+### 04.01. Ejemplo 02.
 ```python
 # Import the BashOperator
 from airflow.operators.bash_operator import BashOperator
