@@ -9,6 +9,10 @@
 -  `airflow list_dags`: me entrega una lista de todos los dags dentro de airflow.
 -  `airflow webserver -p 9090` o `airflow webserver --port 9090`: despliega la interfaz web de airflow en el puerto 9090.
 
+### 01.01. Comandos complementarios de bash
+- `cat workspace/dags/codependent.py`: nos permite visualizar en consola un archivo determiando.
+
+
 ## 02. Airflow: instanciar un DAG básico
 ```python
 # Import the DAG object
