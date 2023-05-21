@@ -78,6 +78,7 @@ pull_file_task = PythonOperator(
     # Define the arguments
     op_kwargs={'URL':'http://dataserver/sales.json', 'savepath':'latestsales.json'},
     dag=process_sales_dag
+    )
 
 
 
