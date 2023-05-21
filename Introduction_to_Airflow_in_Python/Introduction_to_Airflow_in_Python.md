@@ -7,7 +7,7 @@
 -  `airflow version`: me permite saber la version de Airflow instalada.
 -  `airflow -h`: me permite obtener descripciones de todos los subcomandos posibles a ejecutar.
 -  `airflow list_dags`: me entrega una lista de todos los dags dentro de airflow.
--  `airflow webserver -p 9090` o `airflow webserver --port 9090`: despliega la interfaz web de airflow en el puerto 9090.-
+-  `airflow webserver -p 9090` o `airflow webserver --port 9090`: despliega la interfaz web de airflow en el puerto 9090.
 
 ## 02. Airflow: instanciar un DAG básico
 ```python
