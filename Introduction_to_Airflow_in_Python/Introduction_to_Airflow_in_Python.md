@@ -25,7 +25,7 @@ default_args = {
 etl_dag = DAG(dag_id='example_etl', default_args=default_args)
 ```
 
-## 02. Airflow: instanciar un DAG básico
+## 03. Airflow: BashOperator examples
 ```python
 from airflow.operators.bash_operator import BashOperator
 
@@ -42,7 +42,7 @@ dag=dag)
 
 
 
-## 03. Airflow: archivos `.sh`
+## 04. Airflow: archivos `.sh`
 Contenido ejemplo de un archivo `ejemplo.sh`:
 ```bash
 #!/bin/bash
