@@ -21,7 +21,7 @@ default_args = {
 }
 
 # Instantiate the DAG object
-etl_dag = DAG('example_etl', default_args=default_args)
+etl_dag = DAG(dag_id='example_etl', default_args=default_args)
 ```
 
 
