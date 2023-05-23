@@ -8,7 +8,7 @@
 -  `airflow -h`: me permite obtener descripciones de todos los subcomandos posibles a ejecutar.
 -  `airflow list_dags`: me entrega una lista de todos los dags dentro de airflow.
 -  `airflow webserver -p 9090` o `airflow webserver --port 9090`: despliega la interfaz web de airflow en el puerto 9090.
-- `head airflow/airflow.cfg`: no spermite visualizar el archivo de configuración de airflow, que casi simpre esta al interior de la carpeta `airflow`, y y con `head` podemos ver las primeras lineas entre las cuales podemos ver el `dags_folder`.
+- `head airflow/airflow.cfg`: nos permite visualizar el archivo de configuración de airflow, que casi simpre esta al interior de la carpeta `airflow`, y y con `head` podemos ver las primeras lineas entre las cuales podemos ver el `dags_folder`.
 
 
 ### 01.01. Comandos complementarios de bash
