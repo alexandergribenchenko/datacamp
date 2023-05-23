@@ -11,6 +11,14 @@
 - `head airflow/airflow.cfg`: nos permite visualizar el archivo de configuración de airflow, que casi simpre esta al interior de la carpeta `airflow`, y y con `head` podemos ver las primeras lineas entre las cuales podemos ver el `dags_folder`.
 
 
+## 01. Airflow: Debugg de los DAGs
+1. Verificar cual es la carpeta por defecto donde deben estar almacenados los dags, esto lo vemos en el `airflow.cfg
+2. Verificar que el dag que queremos ejecutar se encuentra dentro de esa carpeta.
+3. Ejecutar en consola el archivo `.py` que contiene el dag y verificar que se ejecute normalmente sin entregar ninguna salida, ni ningun tipo de error.
+4. Entrar directamante al DAG ( a su archivo `.py`) y verificar que se encuentre bien configurado.
+
+
+
 ### 01.01. Comandos complementarios de bash
 - `cat workspace/dags/codependent.py`: nos permite visualizar en consola un archivo determiando.
 
