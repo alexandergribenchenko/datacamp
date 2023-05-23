@@ -312,7 +312,12 @@ wget https://data.sba.gov/dataset/8aa276e2-6cab-4f86-aca4-a7dde42adf24/resource/
 
 
 ## 06. Airflow: Sensors
-Contenido ejemplo de un archivo `ejemplo.sh`:
+
+Para saber que tipo de `executor`tenemos, podemos hacerlo ejecutando `airflow list_dags` y visualizando su salida:
+```bash
+bash ejemplo.sh
+```
+
 ```python
 from airflow.models import DAG
 from airflow.operators.bash_operator import BashOperator
@@ -356,9 +361,5 @@ precheck >> part3 >> part2
 
 
 
-Para ejecutar un archivo `.sh` debemos ejecutar en un terminal de linux (por ejemplo, git bash si estamos en Windows) :
-```bash
-bash ejemplo.sh
-```
 
 # Chapter 02. Implementing Airflow DAGs.
