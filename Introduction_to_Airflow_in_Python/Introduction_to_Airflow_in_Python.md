@@ -58,6 +58,26 @@ dag = DAG('update_dataflows', default_args=default_args, schedule_interval='30 1
 ```
 
 
+## 02. Airflow: instanciar un DAG con SLA
+
+SLA para una tarea en especifico
+```python
+task1 = BashOperator(task_id='sla_task',
+bash_command='runcode.sh',
+sla=timedelta(seconds=30),
+dag=dag)
+```
+
+SLA para el DAG
+```python
+default_args={
+'sla': timedelta(minutes=20)
+'start_date': datetime(2020,2,20)
+}
+dag = DAG('sla_dag', default_args=default_args)
+```
+
+
 
 
 ## 03. Airflow: BashOperator examples
