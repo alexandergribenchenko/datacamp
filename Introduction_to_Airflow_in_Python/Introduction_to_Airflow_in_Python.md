@@ -158,6 +158,43 @@ dag=example_dag
 )
 ```
 
+## 03. Airflow: Adding status emails
+```python
+from airflow.models import DAG
+from airflow.operators.bash_operator import BashOperator
+from airflow.contrib.sensors.file_sensor import FileSensor
+from datetime import datetime
+
+default_args={
+    'email': ['airflowalerts@datacamp.com','airflowadmin@datacamp.com'],
+    'email_on_failure': True,
+    'email_on_success': True
+}
+report_dag = DAG(
+    dag_id = 'execute_report',
+    schedule_interval = "0 0 * * *",
+    default_args=default_args
+)
+
+precheck = FileSensor(
+    task_id='check_for_datafile',
+    filepath='salesdata_ready.csv',
+    start_date=datetime(2020,2,20),
+    mode='reschedule',
+    dag=report_dag)
+
+generate_report_task = BashOperator(
+    task_id='generate_report',
+    bash_command='generate_report.sh',
+    start_date=datetime(2020,2,20),
+    dag=report_dag
+)
+```
+
+
+
+
+
 
 ## 03. Airflow: EmailOperator example
 ```python
@@ -192,6 +229,9 @@ email_report = EmailOperator(
 # Set the email task to run after the report is generated
 email_report << generate_report
 ```
+
+
+
 
 
 
