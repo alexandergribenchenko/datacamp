@@ -189,6 +189,8 @@ generate_report_task = BashOperator(
     start_date=datetime(2020,2,20),
     dag=report_dag
 )
+
+precheck >> generate_report_task
 ```
 
 
