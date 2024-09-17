@@ -5,10 +5,24 @@
 - **Web API:** Establecen la comunicación entre dos applicaciones de software a traves de una red o internet utilizando el protocolo http.
 - **Tipos de web API:** SOAP, REST, GraphQL.
 - **Rest API:** Se enfoca en la sinplicidad y escalabilidad, y es el tipo de arquitectura de API más común
+- **URL:** Uniform Resource Locator.
+-
+-
 - Consuming:
+
 
 # 02. Librerias de Python para el uso de APIs
 
-## 02.01. ``urllib`` 
+## 02.01. ``urllib``
+Aunqur viene por defecto con python no es tán amigable y legible para el usuario.
 
 ## 02.02. ``requests`` 
+
+
+# 03. Actions
+- GET: ReadCheck.
+- POST: Create.
+- PUT: Update.
+- DELETED: Delete.
+
+
