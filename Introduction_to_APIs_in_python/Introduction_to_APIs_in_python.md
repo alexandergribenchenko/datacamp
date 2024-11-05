@@ -4,6 +4,7 @@
 - [Repositorio API Binance](https://github.com/binance)
 - [Swagger Binance](https://binance.github.io/binance-api-swagger/)
 - [Platzi Fake Store API](https://fakeapi.platzi.com/)
+- [Swagger Platzi Fake Store API](https://api.escuelajs.co/docs)
 
 
 # 01. Glosary
