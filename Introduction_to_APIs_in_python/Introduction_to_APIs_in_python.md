@@ -10,7 +10,7 @@
 -
 - Consuming:
 
-- (binance)[https://binance.github.io/binance-api-swagger/]
+- [binance](https://binance.github.io/binance-api-swagger/)
 
 # 02. Librerias de Python para el uso de APIs
 
